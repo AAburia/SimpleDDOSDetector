@@ -1,2 +1,11 @@
 # Default ignored files
 /workspace.xml
+*
+*.*
+.*
+!.gitignore
+!*.scala
+!build.properties
+!buid.sbt
+!/*log.txt
+
