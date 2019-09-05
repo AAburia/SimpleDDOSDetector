@@ -48,7 +48,7 @@ object Consumer extends App {
           if (!result.contains(host))
             result(host) = new ArrayBuffer[String]()
           result(host) += time
-          if (!ddosRecords.contains(host) && (result(host).size >= 80)) {
+          if (!ddosRecords.contains(host) && (result(host).size >= 75)) {
             ddosRecords += host
             writer.write(host + " @ " + time + "\n")
           }
